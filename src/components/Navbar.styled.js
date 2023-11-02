@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavList = styled.ul`
-    background-color: rgb(241 245 249);
+  background-color: rgb(241 245 249);
   display: flex;
   justify-content: space-between;
   list-style: none;

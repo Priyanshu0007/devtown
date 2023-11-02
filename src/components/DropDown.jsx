@@ -66,7 +66,7 @@ function DropDown({ defaultText = "", options = [], changeOptionName }) {
             <>
               <OptionMenu role="menu">
                 {options.map((option, key) => (
-                  <OptionRow key={key} onClick={()=>changeOptionName(option)}>
+                  <OptionRow key={key} onClick={()=>{changeOptionName(option); setActionDropDown(false)}}>
                     <Label>{`${option}`}</Label>
                   </OptionRow>
                 ))}

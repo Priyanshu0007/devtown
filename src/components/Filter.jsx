@@ -1,17 +1,15 @@
 
-import { useState } from 'react'
 import DropDown from './DropDown'
 import { Container } from './Filter.styled';
 
-const Filter = () => {
-    const [sortFilter,setSortFilter]=useState("");
-    const [category,setCategory]=useState("");
-    console.log(sortFilter,category);
+// eslint-disable-next-line react/prop-types
+const Filter = ({setSortFilter,setCategory}) => {
+    
   return (
     <Container>
         <p>Checkout Products</p>
-        <DropDown options={["New Arrive","High To Low","Low To High"]} defaultText={`Sort By`} changeOptionName={setSortFilter} />
-        <DropDown options={["Furniture","Starinory","Toliotery"]} defaultText={`Categories`} changeOptionName={setCategory} />        
+        <DropDown options={["High To Low","Low To High","Ascending (A To Z)","Descending (Z To A)"]} defaultText={`Sort By`} changeOptionName={setSortFilter} />
+        <DropDown options={["Clothes","Electronics","Fruits","Furniture","Shoes","Toys and Games","Sports and Outdoors"]} defaultText={`Categories`} changeOptionName={setCategory} />        
     </Container>
 
   )
