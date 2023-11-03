@@ -18,27 +18,12 @@ export const Cards = styled.div`
 `;
 export const PaginationStyle=styled.div`
     margin-top: 1rem;
-    display: grid;
-
+    display: flex;
+    justify-content: center;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    justify-content: space-between;
     gap: 0.25rem;
-    grid-template-columns: repeat(24, minmax(0, 1fr));
-    place-items: center;
-    @media only screen and (max-width: 600px) {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-    @media only screen and (min-width: 768px) {
-        grid-template-columns: repeat(16, minmax(0, 1fr));
-    }
-    @media only screen and (min-width: 992px) {
-        grid-template-columns: repeat(24, minmax(0, 1fr));
-    }
-
     li{
-        
-        margin: auto;
         background-color: rgb(226 232 240);
         padding: 1rem;
         border-radius: 80%;
